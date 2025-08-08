@@ -1,40 +1,19 @@
+[project]
+name = "adv-mla-lab-1"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "larryuts",email = "larryaugusto.iglesiasdesouza@student.uts.edu.au"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pandas (==2.2.2)",
+    "jupyterlab (==4.4.4)",
+    "scikit-learn (==1.5.1)"
+]
+
+
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
-
-[project]
-name = "adv_mla_lab_1"
-version = "0.0.1"
-description = "Lab 1"
-authors = [
-  { name = "Larry Souza" },
-]
-
-readme = "README.md"
-classifiers = [
-    "Programming Language :: Python :: 3",
-    
-]
-dependencies = [
-    "loguru",
-    "pip",
-    "python-dotenv",
-    "ruff",
-    "tqdm",
-    "typer",
-]
-requires-python = "~=3.11.0"
-
-
-[tool.ruff]
-line-length = 99
-src = ["adv_mla_lab_1"]
-include = ["pyproject.toml", "adv_mla_lab_1/**/*.py"]
-
-[tool.ruff.lint]
-extend-select = ["I"]  # Add import sorting
-
-[tool.ruff.lint.isort]
-known-first-party = ["adv_mla_lab_1"]
-force-sort-within-sections = true
-
